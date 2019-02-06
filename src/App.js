@@ -1,20 +1,20 @@
 // dependencies
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // containers
-import Home from './containers/home';
-import Page1 from './containers/page1';
-import Page2 from './containers/page2';
+import Home from "./containers/home";
+import Page1 from "./containers/page1";
+import Page2 from "./containers/page2";
 
 // components
-import Content from './components/content';
-import Footer from './components/footer';
-import Navigation from './components/navigation';
+import Content from "./components/content";
+import Footer from "./components/footer";
+import Navigation from "./components/navigation";
 
 // global styles
-import './styles/base';
-import './styles/type';
+import "./styles/base";
+import "./styles/type";
 
 class App extends React.Component {
   constructor() {
@@ -27,7 +27,7 @@ class App extends React.Component {
   toggleNav() {
     this.setState({ navIsOpen: !this.state.navIsOpen });
     // no scrolling when off-canvas is open
-    document.body.style.overflow = this.state.navIsOpen ? null : 'hidden';
+    document.body.style.overflow = this.state.navIsOpen ? null : "hidden";
   }
 
   closeNav() {
