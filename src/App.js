@@ -13,8 +13,7 @@ import Footer from "./components/footer";
 import Navigation from "./components/navigation";
 
 // global styles
-import "./styles/base";
-import "./styles/type";
+import GlobalStyles from "./styles/global";
 
 class App extends React.Component {
   constructor() {
@@ -39,6 +38,7 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div>
+          <GlobalStyles />
           <Navigation
             toggleNav={this.toggleNav}
             closeNav={this.closeNav}
